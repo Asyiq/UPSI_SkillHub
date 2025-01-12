@@ -1,0 +1,93 @@
+CRITICAL - 2024-12-10 17:26:19 --> ErrorException: Undefined variable $student
+[Method: GET, Route: student-profile]
+in APPPATH\Views\sections\student_profile.php on line 56.
+ 1 APPPATH\Views\sections\student_profile.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $student', 'C:\\laragon\\www\\UPSI_SkillHub\\app\\Views\\sections\\student_profile.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\UPSI_SkillHub\\app\\Views\\sections\\student_profile.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('sections/student_profile', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(57): view('sections/student_profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->studentProfile()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+CRITICAL - 2024-12-10 18:12:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "student_profile.php"
+[Method: GET, Route: student-profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_profile.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('student_profile', [], true)
+ 3 APPPATH\Controllers\StudentProfileController.php(23): view('student_profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+CRITICAL - 2024-12-10 18:12:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "student_profile.php"
+[Method: GET, Route: student-profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_profile.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('student_profile', [], true)
+ 3 APPPATH\Controllers\StudentProfileController.php(23): view('student_profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+CRITICAL - 2024-12-10 18:19:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "student_profile.php"
+[Method: GET, Route: student-profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_profile.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('student_profile', [], true)
+ 3 APPPATH\Controllers\StudentProfileController.php(23): view('student_profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+CRITICAL - 2024-12-10 18:22:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "student_profile.php"
+[Method: GET, Route: student-profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_profile.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('student_profile', [], true)
+ 3 APPPATH\Controllers\StudentProfileController.php(12): view('student_profile')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+CRITICAL - 2024-12-10 18:25:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "student_profile.php"
+[Method: GET, Route: student-profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_profile.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('student_profile', [], true)
+ 3 APPPATH\Controllers\StudentProfileController.php(12): view('student_profile')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+CRITICAL - 2024-12-10 18:25:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "student_profile.php"
+[Method: GET, Route: student-profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_profile.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('student_profile', [], true)
+ 3 APPPATH\Controllers\StudentProfileController.php(12): view('student_profile')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')

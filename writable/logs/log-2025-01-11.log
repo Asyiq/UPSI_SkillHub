@@ -1,0 +1,53 @@
+ERROR - 2025-01-11 19:48:24 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_pkey&quot;
+DETAIL:  Key (student_id)=(D20211097851) already exists. in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO use...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO use...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#4 C:\laragon\www\UPSI_SkillHub\app\Controllers\AuthController.php(74): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#5 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\AuthController->store()
+#6 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#7 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2025-01-11 19:48:44 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_pkey&quot;
+DETAIL:  Key (student_id)=(D20211097851) already exists. in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO use...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO use...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#4 C:\laragon\www\UPSI_SkillHub\app\Controllers\AuthController.php(74): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#5 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\AuthController->store()
+#6 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#7 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2025-01-11 19:54:48 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;updated_at&quot; of relation &quot;users&quot; does not exist
+LINE 1: ... &quot;users&quot; (&quot;student_id&quot;, &quot;password&quot;, &quot;created_at&quot;, &quot;updated_a...
+                                                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\AuthController.php(80): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\AuthController->store()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}

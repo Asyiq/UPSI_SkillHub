@@ -1,0 +1,151 @@
+ERROR - 2025-01-02 05:40:19 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ...e&quot;, &quot;-- Include grade in the select&quot; &quot;student_subjects&quot;.&quot;id&quot;
+                                                                  ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT "subject...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT "subject...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "subject...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT "subject...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\laragon\www\UPSI_SkillHub\app\Models\StudentSubjectsModel.php(35): CodeIgniter\BaseModel->findAll()
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\StudentSubjectsController.php(15): App\Models\StudentSubjectsModel->getStudentSubjects('D20211097851')
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->index()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+CRITICAL - 2025-01-02 05:40:19 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: student-subjects]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\StudentSubjectsModel.php(35): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\StudentSubjectsController.php(15): App\Models\StudentSubjectsModel->getStudentSubjects('D20211097851')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2025-01-02 05:40:52 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ...e&quot;, &quot;-- Include grade in the select&quot; &quot;student_subjects&quot;.&quot;id&quot;
+                                                                  ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT "subject...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT "subject...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "subject...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT "subject...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\laragon\www\UPSI_SkillHub\app\Models\StudentSubjectsModel.php(35): CodeIgniter\BaseModel->findAll()
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\StudentSubjectsController.php(15): App\Models\StudentSubjectsModel->getStudentSubjects('D20211097851')
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->index()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+CRITICAL - 2025-01-02 05:40:52 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: student-subjects]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\StudentSubjectsModel.php(35): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\StudentSubjectsController.php(15): App\Models\StudentSubjectsModel->getStudentSubjects('D20211097851')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2025-01-02 07:43:42 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ...&quot;, &quot;// Include recommendation_level&quot; &quot;student_subjects&quot;.&quot;id&quot;
+                                                                  ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT "subject...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT "subject...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "subject...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT "subject...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\laragon\www\UPSI_SkillHub\app\Models\StudentSubjectsModel.php(37): CodeIgniter\BaseModel->findAll()
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\StudentSubjectsController.php(15): App\Models\StudentSubjectsModel->getStudentSubjects('D20211097851')
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->index()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+CRITICAL - 2025-01-02 07:43:42 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: student-subjects]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\StudentSubjectsModel.php(37): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\StudentSubjectsController.php(15): App\Models\StudentSubjectsModel->getStudentSubjects('D20211097851')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2025-01-02 07:44:39 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ...&quot;, &quot;// Include recommendation_level&quot; &quot;student_subjects&quot;.&quot;id&quot;
+                                                                  ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT "subject...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT "subject...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "subject...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT "subject...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\laragon\www\UPSI_SkillHub\app\Models\StudentSubjectsModel.php(37): CodeIgniter\BaseModel->findAll()
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\StudentSubjectsController.php(15): App\Models\StudentSubjectsModel->getStudentSubjects('D20211097851')
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->index()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+CRITICAL - 2025-01-02 07:44:39 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: student-subjects]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\StudentSubjectsModel.php(37): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\StudentSubjectsController.php(15): App\Models\StudentSubjectsModel->getStudentSubjects('D20211097851')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+CRITICAL - 2025-01-02 08:39:37 --> ErrorException: Undefined variable $studentSubjects
+[Method: GET, Route: job-recommendations]
+in APPPATH\Views\sections\job_recommendations.php on line 113.
+ 1 APPPATH\Views\sections\job_recommendations.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $studentSubjects', 'C:\\laragon\\www\\UPSI_SkillHub\\app\\Views\\sections\\job_recommendations.php', 113)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\UPSI_SkillHub\\app\\Views\\sections\\job_recommendations.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('sections/job_recommendations', [], true)
+ 5 APPPATH\Controllers\JobRecommendationsController.php(56): view('sections/job_recommendations', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')

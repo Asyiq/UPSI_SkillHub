@@ -1,0 +1,320 @@
+ERROR - 2024-12-27 17:59:21 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\JobRecommendationsController.php(20): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 17:59:21 --> Error: Call to a member function getFirstRow() on bool
+[Method: GET, Route: job-recommendations]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\JobRecommendationsController.php(20): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 19:18:03 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\JobRecommendationsController.php(20): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 19:18:03 --> Error: Call to a member function getFirstRow() on bool
+[Method: GET, Route: job-recommendations]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\JobRecommendationsController.php(20): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 19:18:57 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\JobRecommendationsController.php(20): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 19:18:57 --> Error: Call to a member function getFirstRow() on bool
+[Method: GET, Route: job-recommendations]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\JobRecommendationsController.php(20): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 19:23:45 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\JobRecommendationsController.php(18): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 19:23:45 --> Error: Call to a member function getFirstRow() on bool
+[Method: GET, Route: job-recommendations]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\JobRecommendationsController.php(18): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 19:23:47 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\JobRecommendationsController.php(18): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 19:23:47 --> Error: Call to a member function getFirstRow() on bool
+[Method: GET, Route: job-recommendations]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\JobRecommendationsController.php(18): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 19:24:15 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\JobRecommendationsController.php(18): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 19:24:15 --> Error: Call to a member function getFirstRow() on bool
+[Method: GET, Route: job-recommendations]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\JobRecommendationsController.php(18): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 19:24:49 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\JobRecommendationsController.php(18): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 19:24:49 --> Error: Call to a member function getFirstRow() on bool
+[Method: GET, Route: job-recommendations]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\JobRecommendationsController.php(18): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JobRecommendationsController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JobRecommendationsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 19:58:59 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\StudentSubjectsController.php(64): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->add()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 19:58:59 --> Error: Call to a member function getFirstRow() on bool
+[Method: POST, Route: student-subjects/add]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\StudentSubjectsController.php(64): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 20:00:12 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\StudentSubjectsController.php(94): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->delete('26')
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 20:00:12 --> Error: Call to a member function getFirstRow() on bool
+[Method: POST, Route: student-subjects/delete/26]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\StudentSubjectsController.php(94): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->delete('26')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-27 20:00:22 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;D20222222244&quot;
+LINE 3: WHERE &quot;users&quot;.&quot;id&quot; = 'D20222222244'
+                             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+#7 C:\laragon\www\UPSI_SkillHub\app\Controllers\StudentSubjectsController.php(64): CodeIgniter\BaseModel->find('D20222222244')
+#8 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->add()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2024-12-27 20:00:22 --> Error: Call to a member function getFirstRow() on bool
+[Method: POST, Route: student-subjects/add]
+in SYSTEMPATH\Model.php on line 211.
+ 1 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 'D20222222244')
+ 2 APPPATH\Controllers\StudentSubjectsController.php(64): CodeIgniter\BaseModel->find('D20222222244')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentSubjectsController->add()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentSubjectsController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')

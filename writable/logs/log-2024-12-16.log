@@ -1,0 +1,213 @@
+CRITICAL - 2024-12-16 19:07:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "program_structure/index.php"
+[Method: GET, Route: program-structure]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('program_structure/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('program_structure/index', [], true)
+ 3 APPPATH\Controllers\ProgramStructureController.php(22): view('program_structure/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProgramStructureController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
+ERROR - 2024-12-16 19:20:47 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (1, null, 1). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 19:20:51 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (2, null, 1). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 19:20:53 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (3, null, 2). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 19:20:54 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (4, null, 3). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 19:20:55 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (5, null, 4). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 19:39:21 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (6, null, 1). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 19:42:50 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (7, null, 1). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 19:42:51 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (8, null, 2). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 19:42:52 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;student_id&quot; of relation &quot;student_subjects&quot; violates not-null constraint
+DETAIL:  Failing row contains (9, null, 3). in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "st...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "st...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "st...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "st...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\ProgramStructureController.php(27): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\ProgramStructureController->add()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramStructureController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2024-12-16 20:22:17 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(admin) already exists. in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\UPSI_SkillHub\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\AuthController.php(53): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\AuthController->store()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}

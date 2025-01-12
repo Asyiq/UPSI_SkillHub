@@ -1,0 +1,34 @@
+ERROR - 2024-12-12 11:10:41 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;students&quot; does not exist
+LINE 2: FROM &quot;students&quot;
+             ^ in C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\UPSI_SkillHub\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\laragon\www\UPSI_SkillHub\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\laragon\www\UPSI_SkillHub\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\laragon\www\UPSI_SkillHub\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\laragon\www\UPSI_SkillHub\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\laragon\www\UPSI_SkillHub\app\Models\StudentProfileModel.php(13): CodeIgniter\BaseModel->findAll()
+#8 C:\laragon\www\UPSI_SkillHub\app\Controllers\StudentProfileController.php(12): App\Models\StudentProfileModel->getStudentData()
+#9 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(933): App\Controllers\StudentProfileController->index()
+#10 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentProfileController))
+#11 C:\laragon\www\UPSI_SkillHub\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\UPSI_SkillHub\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\UPSI_SkillHub\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\UPSI_SkillHub\public\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\UPSI_SkillHub\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+CRITICAL - 2024-12-12 11:10:41 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: student-profile]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\StudentProfileModel.php(13): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\StudentProfileController.php(12): App\Models\StudentProfileModel->getStudentData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(46): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\UPSI_SkillHub\\public\\index.php')
