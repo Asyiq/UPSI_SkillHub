@@ -31,10 +31,10 @@ app.baseURL = 'https://your-app.onrender.com'
 # DATABASE
 #--------------------------------------------------------------------
 
-database.default.hostname = localhost
-database.default.database = student_data
-database.default.username = postgres
-database.default.password = 1234
+database.default.hostname = dpg-cu21it9u0jms738n23c0-a
+database.default.database = student_data_w9kk
+database.default.username = student_data_w9kk_user
+database.default.password = vZvQoNHRTJVu7foqGWdRqJbuC9IywSQa
 database.default.DBDriver = Postgre
 database.default.port = 5432
 
